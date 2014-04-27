@@ -1,8 +1,9 @@
 ## Programming Assignment 2
 ## Created by Nicholas Dell'Omo
 ## 4/27/2014
+## Two Functions to create and cache the inverse of a matrix 
 
-## This function inputs a matrix and creates a lives of four functions
+## This function creates a matrix and  a list with four functions
 
 makeCacheMatrix <- function(x = matrix()) {
       i <- NULL
@@ -18,7 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
            getInverse = getInverse)
 }
 
-## This function uses the matrix from makeCacheMatrix and creates the inverse if the inverse is not already creates.  If it is, it uses the cached matrix.
+## This function uses the matrix from makeCacheMatrix and creates the inverse if the inverse is not already creates.  
+## If it has been, and the matrix has not changed, it uses the cached matrix.
 
 cacheSolve <- function(x, ...) {
       ## Return a matrix that is the inverse of 'x'
